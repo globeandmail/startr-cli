@@ -8,7 +8,7 @@ A command-line scaffolder for the [**`startr`**](https://www.github.com/globeand
 
 Make sure you have Node.js >= v8.11 (consider using [NVM](https://github.com/creationix/nvm)), then just:
 
-```js
+```bash
 npm install -g startr-cli
 ```
 
