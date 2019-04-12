@@ -18,7 +18,7 @@ Just run `create-startr` in the directory you want your project in, then follow 
 
 ### Version
 
-1.1.0
+1.2.0
 
 ### License
 
