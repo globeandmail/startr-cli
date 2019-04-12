@@ -1,9 +1,8 @@
 # startr-cli
 
-A command-line interface for the [**`startr`**](https://www.github.com/globeandmail/startr) R project scaffold. This will pull down the latest version of `startr` from GitHub, rewrite some project variables to your specified project name and initialize a fresh git repository.
+A command-line scaffolder for the [**`startr`**](https://www.github.com/globeandmail/startr) R project template. This will pull down the latest version of `startr` from GitHub, rewrite some project variables to your specified project name and initialize a fresh git repository.
 
 ![startr-cli interface GIF](http://i.imgur.com/4qtiJar.gif)
-
 
 ### Installation instructions
 
