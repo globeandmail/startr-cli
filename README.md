@@ -8,7 +8,7 @@ A command-line scaffolder for the [**`startr`**](https://www.github.com/globeand
 
 Make sure you have Node.js >= v8.11 (consider using [NVM](https://github.com/creationix/nvm)), then just:
 
-```js
+```bash
 npm install -g startr-cli
 ```
 
@@ -28,6 +28,6 @@ startr-cli © 2019 The Globe and Mail. It is free software, and may be redistrib
 
 If you've got any questions, feel free to send us an email, or give us a shout on Twitter:
 
-[![Tom Cardoso](https://avatars0.githubusercontent.com/u/2408118?v=3&s=200)](https://github.com/tomcardoso) | [![Michael Pereira](https://avatars0.githubusercontent.com/u/212666?v=3&s=200)](https://github.com/monkeycycle)
+[![Michael Pereira](https://avatars0.githubusercontent.com/u/212666?v=3&s=200)](https://github.com/monkeycycle) | [![Tom Cardoso](https://avatars0.githubusercontent.com/u/2408118?v=3&s=200)](https://github.com/tomcardoso)
 ---|---
-[Tom Cardoso](mailto:tcardoso@globeandmail.com) <br> [@tom_cardoso](https://www.twitter.com/tom_cardoso) | [Michael Pereira](mailto:mpereira@globeandmail.com) <br> [@monkeycycle_org](https://www.twitter.com/monkeycycle_org)
+[Michael Pereira](mailto:mpereira@globeandmail.com) <br> [@__m_pereira](https://www.twitter.com/__m_pereira) | [Tom Cardoso](mailto:tcardoso@globeandmail.com) <br> [@tom_cardoso](https://www.twitter.com/tom_cardoso)
