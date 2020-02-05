@@ -108,6 +108,8 @@ async function run() {
 
     Remote.setPushurl(currRepo, 'upstream', 'NOT_AVAILABLE');
 
+    console.log('Renaming files and cleaning up…');
+
     await fs.move(
       projectPath(response.project, 'startr.Rproj'),
       projectPath(response.project, `${response.project}.Rproj`)
@@ -127,13 +129,12 @@ async function run() {
 
     await replaceInFile({
       files: projectPath(response.project, 'README.md'),
-      from: `# startR`,
+      from: `# startr`,
       to: `# ${response.project}`
     });
 
     await fs.remove(projectPath(response.project, 'DESCRIPTION'));
 
-    console.log('Renaming files and cleaning up…');
     console.log(); // spacer
     console.log(`✔ The startr project ${bold(response.project)} is ready! 💪`);
 
