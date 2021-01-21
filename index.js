@@ -118,12 +118,12 @@ async function run() {
     await replaceInFile({
       files: projectPath(response.project, 'config.R'),
       from: [
-        `config_title <- 'startr'`,
-        `config_author <- 'Firstname Lastname <firstlast@globeandmail.com>'`
+        `title = 'startr'`,
+        `author = 'Firstname Lastname <firstlast@globeandmail.com>'`,
       ],
       to: [
-        `config_title <- '${response.project}'`,
-        `config_author <- '${response.author} <${response.email}>'`
+        `title = '${response.project}'`,
+        `author = '${response.author} <${response.email}>'`
       ]
     });
 
