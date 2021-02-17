@@ -1,6 +1,6 @@
 {
   "name": "startr-cli",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A CLI to scaffold a startr project.",
   "main": "index.js",
   "scripts": {
