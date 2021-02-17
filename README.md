@@ -16,10 +16,6 @@ npm install -g startr-cli
 
 Just run `create-startr` in the directory you want your project in, then follow the prompts.
 
-### Version
-
-1.2.1
-
 ### License
 
 startr-cli © 2019 The Globe and Mail. It is free software, and may be redistributed under the terms specified in our MIT license.
