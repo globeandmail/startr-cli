@@ -119,7 +119,7 @@ async function run() {
       files: projectPath(response.project, 'config.R'),
       from: [
         `title = 'startr'`,
-        `author = 'Firstname Lastname <firstlast@globeandmail.com>'`,
+        `author = 'Firstname Lastname <firstlast@example.com>'`,
       ],
       to: [
         `title = '${response.project}'`,
