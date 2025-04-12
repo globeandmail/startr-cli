@@ -6,7 +6,7 @@ A command-line scaffolder for the [**`startr`**](https://www.github.com/globeand
 
 ### Installation instructions
 
-Make sure you have Node.js >= v14.19 (consider using [NVM](https://github.com/creationix/nvm)), then just:
+Make sure you have Node.js >= v22 (consider using [NVM](https://github.com/creationix/nvm)), then just:
 
 ```bash
 npm install -g startr-cli
