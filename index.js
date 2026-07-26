@@ -8,6 +8,7 @@ import simpleGit from 'simple-git';
 import kleur from 'kleur';
 import { fileURLToPath } from 'url';
 import { parseArgs } from 'util';
+import { createRequire } from 'module';
 
 const { bold } = kleur;
 const projRegex = /[^a-z0-9-]/;
@@ -16,6 +17,7 @@ const upstreamRepo = 'https://github.com/globeandmail/startr.git';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const currDir = process.cwd();
+const { version } = createRequire(import.meta.url)('./package.json');
 
 function projectPath(project, ...subpaths) {
   return path.join(currDir, project, ...subpaths);
@@ -46,6 +48,7 @@ Options:
   -r, --remote <url>     Git remote to point the new project at (optional)
   -y, --yes              Skip the confirmation prompt
   -h, --help             Show this help message
+  -v, --version          Show the installed version
 
 If --project, --author and --email are all provided, prompts are skipped
 entirely. This is the supported way to run create-startr non-interactively
@@ -59,11 +62,17 @@ const { values: args } = parseArgs({
     remote: { type: 'string', short: 'r' },
     yes: { type: 'boolean', short: 'y', default: false },
     help: { type: 'boolean', short: 'h', default: false },
+    version: { type: 'boolean', short: 'v', default: false },
   },
 });
 
 if (args.help) {
   console.log(usage);
+  process.exit(0);
+}
+
+if (args.version) {
+  console.log(version);
   process.exit(0);
 }
 
