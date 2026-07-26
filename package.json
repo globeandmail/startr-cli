@@ -3,6 +3,9 @@
   "version": "1.4.0",
   "description": "A CLI to scaffold a startr project.",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node --test"
   },
