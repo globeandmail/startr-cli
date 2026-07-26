@@ -16,6 +16,25 @@ npm install -g startr-cli
 
 Just run `create-startr` in the directory you want your project in, then follow the prompts.
 
+### Non-interactive use
+
+`create-startr` can also be run non-interactively, e.g. from a script or an AI coding agent, by passing all required options as flags:
+
+```bash
+create-startr --project my-project --author "Jane Doe" --email jane@example.com --yes
+```
+
+| Flag | Description |
+| --- | --- |
+| `-p, --project <name>` | Project name (lower case letters, numbers, hyphens) |
+| `-a, --author <name>` | Your name |
+| `-e, --email <email>` | Your email address |
+| `-r, --remote <url>` | Git remote to point the new project at (optional) |
+| `-y, --yes` | Skip the confirmation prompt |
+| `-h, --help` | Show usage |
+
+If `--project`, `--author` and `--email` are all provided, the interactive prompts are skipped entirely. In a non-interactive shell (no TTY), all three flags plus `--yes` are required — `create-startr` will exit with an error instead of hanging if any are missing.
+
 ### License
 
 startr-cli © 2019 The Globe and Mail. It is free software, and may be redistributed under the terms specified in our MIT license.
